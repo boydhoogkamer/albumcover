@@ -1,0 +1,119 @@
+html {
+  font-family: sans-serif;
+}
+/*reset*/
+html, body, div, article, p, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.cover{
+  width: 300px;
+  float: left;
+  margin: 1em;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+}
+
+.cover article {
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  height: 300px;
+  font-size: .7em;
+  padding: 1em;
+  margin-top: 0;
+}
+
+.up article{
+  animation: up .8s forwards;
+}
+
+.down article{
+  animation: down 1s forwards;
+}
+
+@-moz-keyframes down{
+  10% {margin-top: -308px}
+  30% {margin-top: -154px}
+  50% {margin-top: -78px}
+  70% {margin-top: -38px}
+  90% {margin-top: -19px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
+
+@-moz-keyframes up{
+  10% {margin-top: 0}
+  30% {margin-top: -156px}
+  50% {margin-top: -225px}
+  70% {margin-top: -270px}
+  90% {margin-top: -290px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -308px}
+}
+
+@keyframes down{
+  10% {margin-top: -308px}
+  30% {margin-top: -154px}
+  50% {margin-top: -78px}
+  70% {margin-top: -38px}
+  90% {margin-top: -19px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
+
+@keyframes up{
+  10% {margin-top: 0}
+  30% {margin-top: -156px}
+  50% {margin-top: -225px}
+  70% {margin-top: -270px}
+  90% {margin-top: -290px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -308px}
+}
+
+@-webkit-keyframes down{
+  10% {margin-top: -308px}
+  30% {margin-top: -154px}
+  50% {margin-top: -78px}
+  70% {margin-top: -38px}
+  90% {margin-top: -19px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
+
+@-webkit-keyframes up{
+  10% {margin-top: 0}
+  30% {margin-top: -156px}
+  50% {margin-top: -225px}
+  70% {margin-top: -270px}
+  90% {margin-top: -290px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -308px}
+}
+.cover article h3, .cover article h4, .cover article p {
+padding: .3em;
+}
+
+.totaal {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: black;
+}
+
+.validatie {
+  text-align: center;
+}
+
+.footertext {
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+  color: #F9D342;
+}
